@@ -3,7 +3,9 @@ import "./SpecialMenu.css"
 
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <div className="app__specialmenu" id='Menu'>
+      Menu
+    </div>
   )
 }
 
