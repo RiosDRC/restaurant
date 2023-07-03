@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/restaurant/static/css/main.4e7573b0.css",
+    "main.css": "/restaurant/static/css/main.6c2db0cd.css",
     "main.js": "/restaurant/static/js/main.aa18a97b.js",
     "static/media/meal.mp4": "/restaurant/static/media/meal.a1b6c6dc67dfa2f99343.mp4",
     "static/media/bg.png": "/restaurant/static/media/bg.3d421b1b5682e1b67deb.png",
@@ -13,6 +13,7 @@
     "static/media/gallery03.png": "/restaurant/static/media/gallery03.b2d50180e8590d4dd330.png",
     "static/media/gallery02.png": "/restaurant/static/media/gallery02.27663bd9016b72ccd328.png",
     "static/media/gallery01.png": "/restaurant/static/media/gallery01.f2cbffe3049d6f91e0df.png",
+    "static/media/bg(950px).png": "/restaurant/static/media/bg(950px).3761ec568fd04870f46c.png",
     "static/media/knife.png": "/restaurant/static/media/knife.1121c0a5afb62acb31cb.png",
     "static/media/overlaybg.png": "/restaurant/static/media/overlaybg.165362eea72d1614ae28.png",
     "static/media/G.png": "/restaurant/static/media/G.b571eb82e589ec305ec9.png",
@@ -24,11 +25,11 @@
     "static/media/sign.png": "/restaurant/static/media/sign.9bf0bd90ad4caa17991f.png",
     "index.html": "/restaurant/index.html",
     "static/media/spoon.svg": "/restaurant/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
-    "main.4e7573b0.css.map": "/restaurant/static/css/main.4e7573b0.css.map",
+    "main.6c2db0cd.css.map": "/restaurant/static/css/main.6c2db0cd.css.map",
     "main.aa18a97b.js.map": "/restaurant/static/js/main.aa18a97b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e7573b0.css",
+    "static/css/main.6c2db0cd.css",
     "static/js/main.aa18a97b.js"
   ]
 }
