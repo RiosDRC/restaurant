@@ -10,7 +10,7 @@ const Links = () => (
     <li className="p__opensans"><a href='#Home'>Home</a></li>
     <li className="p__opensans"><a href='#About'>About</a></li>
     <li className="p__opensans"><a href='#Menu'>Menu</a></li>
-    <li className="p__opensans"><a href='#Rewards'>Rewards</a></li>
+    <li className="p__opensans"><a href='#Awards'>Awards</a></li>
     <li className="p__opensans"><a href='#Contact'>Contact</a></li>
   </>
 )
