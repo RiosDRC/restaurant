@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/restaurant/static/css/main.a20abde4.css",
-    "main.js": "/restaurant/static/js/main.825e11cd.js",
+    "main.js": "/restaurant/static/js/main.62a2d9b9.js",
     "static/media/meal.mp4": "/restaurant/static/media/meal.a1b6c6dc67dfa2f99343.mp4",
-    "static/media/welcome.png": "/restaurant/static/media/welcome.d724eb984456d9c97470.png",
-    "static/media/findus.png": "/restaurant/static/media/findus.585c393ccd3671513743.png",
-    "static/media/laurels.png": "/restaurant/static/media/laurels.e760828692795d4aafd7.png",
     "static/media/chef.png": "/restaurant/static/media/chef.02d6c5b61bfdc70303b4.png",
     "static/media/menu.png": "/restaurant/static/media/menu.a8287c67809afebcc280.png",
     "static/media/gallery04.png": "/restaurant/static/media/gallery04.c36a695f8a3b9d311106.png",
+    "static/media/welcome.png": "/restaurant/static/media/welcome.c25f6b52228544ffe856.png",
     "static/media/gallery03.png": "/restaurant/static/media/gallery03.b2d50180e8590d4dd330.png",
     "static/media/gallery02.png": "/restaurant/static/media/gallery02.27663bd9016b72ccd328.png",
+    "static/media/laurels.png": "/restaurant/static/media/laurels.77f214fc9b8fd3a37f45.png",
     "static/media/gallery01.png": "/restaurant/static/media/gallery01.f2cbffe3049d6f91e0df.png",
     "static/media/bg(950px).png": "/restaurant/static/media/bg(950px).3761ec568fd04870f46c.png",
+    "static/media/findus.png": "/restaurant/static/media/findus.81d377f1f485fb3b5386.png",
     "static/media/bg.png": "/restaurant/static/media/bg.ed9587f0e44e74d889b4.png",
     "static/media/knife.png": "/restaurant/static/media/knife.1121c0a5afb62acb31cb.png",
     "static/media/overlaybg.png": "/restaurant/static/media/overlaybg.165362eea72d1614ae28.png",
@@ -26,10 +26,10 @@
     "index.html": "/restaurant/index.html",
     "static/media/spoon.svg": "/restaurant/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
     "main.a20abde4.css.map": "/restaurant/static/css/main.a20abde4.css.map",
-    "main.825e11cd.js.map": "/restaurant/static/js/main.825e11cd.js.map"
+    "main.62a2d9b9.js.map": "/restaurant/static/js/main.62a2d9b9.js.map"
   },
   "entrypoints": [
     "static/css/main.a20abde4.css",
-    "static/js/main.825e11cd.js"
+    "static/js/main.62a2d9b9.js"
   ]
 }
