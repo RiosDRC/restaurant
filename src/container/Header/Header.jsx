@@ -13,7 +13,7 @@ const Header = () => {
         <p className="p__opensans" style={{ margin: "2rem 0"}}>
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus 
         </p>
-        <button className='custom__button' type='button'>Explore Menu</button>
+        <a href='#Menu' className='custom__button' type='button'>Explore Menu</a>
       </div>
 
       <div className="app__wrapper_img">

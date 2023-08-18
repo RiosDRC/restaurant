@@ -11,8 +11,8 @@ const FindUs = () => {
         <div className="app__wrapper-content">
           <p className="p__opensans">Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
           <p className="p__cormorant" style={{color: "#DCCE87", margin: "2rem 0"}}>Opening Hours</p>
-          <p className="p__opensans" style={{color: "#FFF"}}>Mon - Fri: 10:00 am - 02:00 am</p>
-          <p className="p__opensans" style={{color: "#FFF"}}>Sat - Sun: 10:00 am - 03:00 am</p>
+          <p className="p__opensans" style={{color: "#FFF"}}>Mon - Fri: 10:00 A.M. - 02:00 A.M.</p>
+          <p className="p__opensans" style={{color: "#FFF"}}>Sat - Sun: 10:00 A.M. - 03:00 A.M.</p>
         </div>
         <button className="custom__button" style={{marginTop: "2rem"}}>Visit Us</button>
       </div>

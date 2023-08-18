@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Navbar.css"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineRestaurantMenu } from "react-icons/md"
-
+import { Context } from '../../context/Context'
 import images from "../../constants/images"
 
 const Links = () => (
@@ -17,19 +17,20 @@ const Links = () => (
 
 const Navbar = () => {
   const [ toggleMenu, setToggleMenu ] = useState(false);
+  const { setIsLoginVisible, setIsBookingVisible } = useContext(Context)
 
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="" />
+        <a href="/"><img src={images.gericht} alt="" /></a>
       </div>
       <ul className="app__navbar-links">
         <Links />
       </ul>
       <div className="app__navbar-login">
-        <a href="#login" className='p__opensans'>Log In / Register</a>
+        <button className='p__opensans' onClick={() => setIsLoginVisible(prev => !prev)}>Log In / Register</button>
         <div />
-        <a href="/" className="p__opensans">Book</a>
+        <button className="p__opensans"  onClick={() => setIsBookingVisible(prev => !prev)}>Book</button>
       </div>
       <div className="app__navbar-smallscreen">
         {toggleMenu ?

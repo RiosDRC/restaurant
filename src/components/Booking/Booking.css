@@ -1,0 +1,50 @@
+.app__booking {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #000000ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.app__booking-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--color-white);
+}
+
+.app__booking-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.app__booking-content p {
+    text-align: center;
+}
+
+.app__booking-content input {
+    width: 250px;
+    padding: 1rem;
+}
+
+.app__booking-content form h5 {
+    text-transform: capitalize;
+    color: var(--color-golden);
+}
+
+.close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    cursor: pointer;
+}

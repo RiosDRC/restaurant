@@ -38,6 +38,7 @@
     width: max-content;
     overflow-x: scroll;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
 }
 
 .app__gallery-images_container::-webkit-scrollbar {
@@ -49,6 +50,7 @@
     min-width: 301px;
     height: auto;
     margin-right: 2rem;
+    scroll-snap-align: center;
 }
 
 .gallery__image-icon {

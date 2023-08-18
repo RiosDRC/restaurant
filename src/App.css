@@ -15,12 +15,6 @@
     background-repeat: repeat;
     background-attachment: fixed;
   }
-
-  @media (max-width: 900px) {
-    .app__bg {
-      background: url('./assets/bg\(950px\).png');
-    }
-  }
   
   .app__wrapper {
     display: flex;
@@ -71,7 +65,13 @@
       border: none;
       outline: none;
       cursor: pointer;
+      width: max-content;
   }
+
+  .custom__button:disabled {
+    color: gray;
+    cursor: default;
+}
   
   .p__cormorant {
     font-family: var(--font-base);

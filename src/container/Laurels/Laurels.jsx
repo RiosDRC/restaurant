@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Laurels.css"
-import { images,data } from "../../constants"
+import { images, data } from "../../constants"
 import { Subheading } from '../../components'
 
 const AwardCard = ({award}) => (

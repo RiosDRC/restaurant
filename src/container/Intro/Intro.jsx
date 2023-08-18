@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
+import { meal } from '../../constants'
 import "./Intro.css"
-import { meal } from "../../constants"
 import { BsFillPlayFill, BsPauseFill } from "react-icons/bs"
 
 const Intro = () => {

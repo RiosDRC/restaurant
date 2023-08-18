@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./Gallery.css"
 import { images } from "../../constants"
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs"
@@ -8,6 +8,7 @@ const galleryImages = [images.gallery01, images.gallery02, images.gallery03, ima
 
 const Gallery = () => {
   const scrollRef = useRef()
+  const  [arrow, setArrow ] = useState('left')
 
   const scroll = (direction) =>{
     const { current } = scrollRef;
@@ -18,6 +19,33 @@ const Gallery = () => {
       current.scrollLeft += 300;
     }
   }
+
+  useEffect(() => {
+    const { current } = scrollRef;
+    const handleScroll = () => {
+      if (current) {
+        if (current.scrollLeft < 100) {
+          setArrow('left');
+        } else if (
+          current.scrollLeft >= current.scrollWidth - current.clientWidth - 150
+        ) {
+          setArrow('right')
+        } else {
+          setArrow('center')
+        }
+      }
+    };
+
+    if (current) {
+      current.addEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      if (current) {
+        current.removeEventListener('scroll', handleScroll);
+      }
+    }
+  },[])
 
   return (
     <div className="app__gallery flex__center">
@@ -38,8 +66,8 @@ const Gallery = () => {
         </div>
 
         <div className="app__gallery-images_arrows">
-          <BsArrowLeftShort className='gallery__arrow-icon' onClick={()=>{scroll("left")}}/>
-          <BsArrowRightShort className='gallery__arrow-icon' onClick={()=>{scroll("right")}}/>
+          <BsArrowLeftShort className='gallery__arrow-icon' onClick={()=>{scroll("left")}} style={arrow === 'left' ? {opacity: 0.2, PointerEvent: 'none', cursor: 'default'} : null}/>
+          <BsArrowRightShort className='gallery__arrow-icon' onClick={()=>{scroll("right")}} style={arrow === 'right' ? {opacity: 0.2, PointerEvent: 'none', cursor: 'default'} : null}/>
         </div>
       </div>
     </div>
