@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import './Login.css'
 import { Context } from '../../context/Context'
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
+import { MdOutlineRestaurantMenu } from "react-icons/md"
 
 const Login = () => {
     const { setIsLoginVisible } = useContext(Context);
@@ -32,7 +33,7 @@ const Login = () => {
 
   return (
     <div className='app__login slide-bottom'>
-        <div className='close' onClick={() => setIsLoginVisible(prev => !prev)}>X</div>
+        <MdOutlineRestaurantMenu className='close' onClick={() => setIsLoginVisible(prev => !prev)}/>
         <div className="app__login-content p__opensans">
         <h2 className='headtext__cormorant'>{loginView ? 'Log In' : 'Register'}</h2>
         {loginView

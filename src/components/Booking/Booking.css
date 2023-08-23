@@ -37,14 +37,29 @@
 }
 
 .app__booking-content form h5 {
+    font-size: 16px;
     text-transform: capitalize;
     color: var(--color-golden);
+    animation: appear 0.5s both;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 1%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
 }
 
 .close {
     position: absolute;
     top: 2rem;
     right: 2rem;
+    font-size: 25px;
     color: white;
     cursor: pointer;
 }
