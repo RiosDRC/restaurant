@@ -14,7 +14,6 @@ const Booking = () => {
     }
 
     const handleDate = (date) => {
-        console.log(date)
         setReservation(prev => ({...prev, date: date}))
     }
 
@@ -28,14 +27,16 @@ const Booking = () => {
 
     useEffect(() => {
         if (reservation.time !== '') {
-            const SelectedDate = new Date(reservation.date)
-            const dayOfWeek = SelectedDate.getDay();
+            const today = new Date();
+            const formattedToday = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`
+            const selectedDate = new Date(reservation.date);
+            const dayOfWeek = selectedDate.getDay();
 
             const [ hours, minutes ] = reservation.time.split(':')
             let notValid = ['02', '03', '04', '05', '06', '07', '08', '09'];
 
             if (dayOfWeek === 5 || dayOfWeek === 6) {
-                notValid = ['03', '04', '05', '06', '07', '08', '09'];
+                notValid = ['02', '03', '04', '05', '06', '07', '08', '09'];
             }
 
             if (!notValid.includes(hours)) {
@@ -43,6 +44,18 @@ const Booking = () => {
             } else {
                 setAvailable(false)
             }
+
+            const todayHours = today.getHours()
+            const todayMinutes = today.getMinutes()
+
+            if (formattedToday === reservation.date) {
+                if (todayHours > hours) {
+                    setAvailable(false)
+                }
+                else if (todayHours === parseInt(hours) && todayMinutes > parseInt(minutes)) {
+                    setAvailable(false)
+                }
+            }            
         }
 
         if (reservation.date === '' || reservation.time === '') {
@@ -71,10 +84,11 @@ const Booking = () => {
             <h3 className="headtext__cormorant">Opening Hours</h3>
             <p className="p__opensans">Mon - Fri: 10:00 A.M. - 02:00 A.M.</p>
             <p className="p__opensans">Sat - Sun: 10:00 A.M. - 03:00 A.M.</p>
+            <h6 className="p__opensans">*Reservations should be booked at least 1 hour before closing time</h6>
 
             <form onSubmit={e => e.preventDefault()}>
                 <input type="date" value={reservation.date} required name='date' onChange={e => handleDate(e.target.value)} min={getMinDate()}/>
-                <input type="time" required value={reservation.time} onChange={e => handleTime(e.target.value)} step='900'/>
+                <input type="time" required value={reservation.time} onChange={e => handleTime(e.target.value)} step={900}/>
                 <h5>{message}</h5>
                 <button disabled className='custom__button'>Book</button>
                 <h5>Please Log In Before Continuing</h5>
